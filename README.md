@@ -60,4 +60,3 @@ tensorboard --logdir logs/ppo_nav --port 6006
 ##Evaluate the Trained Model
 python3 evaluate.py
 
-Write your name on line 6, save it, and then head back to GitHub Desktop.
