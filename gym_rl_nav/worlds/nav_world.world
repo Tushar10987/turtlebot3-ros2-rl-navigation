@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="nav_world">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <!-- Add some boxes -->
+    <include>
+      <uri>model://box</uri>
+      <pose>1 1 0.5 0 0 0</pose>
+      <scale>1 1 1</scale>
+    </include>
+    <include>
+      <uri>model://box</uri>
+      <pose>-1 -1 0.5 0 0 0</pose>
+      <scale>1 2 1</scale>
+    </include>
+    <!-- Add walls -->
+    <model name="wall1">
+      <static>true</static>
+      <link name="link">
+        <pose>0 2 0.5 0 0 0</pose>
+        <collision name="col">
+          <geometry><box><size>4 0.1 1</size></box></geometry>
+        </collision>
+        <visual name="vis">
+          <geometry><box><size>4 0.1 1</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>
+

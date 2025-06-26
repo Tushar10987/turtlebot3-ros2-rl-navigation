@@ -1,0 +1,23 @@
+# ROS 2 build artifacts
+build/
+install/
+log/
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*.so
+
+# VSCode, JetBrains, etc.
+.vscode/
+.idea/
+
+# Environment files
+*.env
+*.egg-info/
+
+# Checkpoints and logs
+*.zip
+logs/
+results.csv
+tensorboard/
