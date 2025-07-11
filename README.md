@@ -39,7 +39,7 @@ ros2_rl_ws/
 ### Install dependencies
 
 ```bash
-[git clone https://github.com/Tushar10987/turtlebot3-ros2-rl-navigation.git ]
+git clone https://github.com/Tushar10987/turtlebot3-ros2-rl-navigation.git 
 cd ros2-rl-nav
 
 conda create -n rl_nav_env python=3.10
