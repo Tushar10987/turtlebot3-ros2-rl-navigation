@@ -40,7 +40,7 @@ ros2_rl_ws/
 
 ```bash
 git clone https://github.com/Tushar10987/turtlebot3-ros2-rl-navigation.git 
-cd ros2-rl-nav
+cd turtlebot3-ros2-rl-navigation
 
 conda create -n rl_nav_env python=3.10
 conda activate rl_nav_env
