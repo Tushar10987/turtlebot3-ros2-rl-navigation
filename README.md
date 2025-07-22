@@ -50,12 +50,14 @@ pip install stable-baselines3 gymnasium numpy torch matplotlib tensorboard
 source /opt/ros/humble/setup.bash
 colcon build
 source install/setup.bash
+cd gym_rl_nav
 
 ## Train the Agent
-python3 train.py
+python3 train_ppo.py
 
 ##View TensorBoard
 tensorboard --logdir logs/ppo_nav --port 6006
+http://localhost:6006/     --- search in browser to view the process
 
 ##Evaluate the Trained Model
 python3 evaluate.py
