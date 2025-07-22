@@ -52,6 +52,9 @@ colcon build
 source install/setup.bash
 cd gym_rl_nav
 
+## Lauch Gazebo and turtlebot
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+
 ## Train the Agent
 python3 train_ppo.py
 
